@@ -7,6 +7,8 @@
         <div class="navbar-nav">
             <a class="nav-item nav-link active" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link " href="{{url('/create')}}">Create</a>
+            <a class="nav-item nav-link " href="{{ url('/login') }}">Login</a>
+            <a class="nav-item nav-link " href="{{ url('/register') }}">Register</a>
 
         </div>
     </div>

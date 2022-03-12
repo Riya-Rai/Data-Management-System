@@ -23,3 +23,9 @@ Route::get('/show/{id}',"App\Http\Controllers\StudentController@show") ;
 Route::get('/create',"App\Http\Controllers\StudentController@create") ;
 Route::post('/store',"App\Http\Controllers\StudentController@store") ;
 Route::post('/update/{id}',"App\Http\Controllers\StudentController@update") ;
+Route::get('login',function(){
+    return view(view: 'login');
+});
+Route::get('register',function(){
+    return view(view: 'register');
+});
