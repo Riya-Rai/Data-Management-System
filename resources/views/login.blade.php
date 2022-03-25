@@ -33,21 +33,28 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
+					@if(Session::has('Success'))
+<div class="alert alert-success">{{Session::get('Success')}}</div>
+			@endif
+			@if(Session::has('fail'))
+<div class="alert alert-danger">{{Session::get('fail')}}</div>
+			@endif
 					<span class="login100-form-title-1">
 						Sign In
 					</span>
 				</div>
 
-				<form class="login100-form validate-form">
+				<form action="{{route('login-user')}}" class="login100-form validate-form" method="post">
+					@csrf
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Enter username">
+						<span class="label-input100" >Email</span>
+						<input class="input100" type="text" name="email" placeholder="Enter username">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
-						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="pass" placeholder="Enter password">
+						<span class="label-input100" >Password</span>
+						<input class="input100" type="password" name="password" placeholder="Enter password">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -63,6 +70,11 @@
 							<a href="#" class="txt1">
 								Forgot Password?
 							</a>
+							<br>
+
+							<a href="/register" class="txt1">
+							New USer!!! Register Now
+						</a>
 						</div>
 					</div>
 
