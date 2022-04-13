@@ -2,8 +2,8 @@
 <div class="card mb-3">
     <img src="https://www.creatrixcampus.com/sites/default/files/styles/image_1200x700/public/2019-05/benefits-of-student-information-system.jpg?itok=5_KSMYS5" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">List of students</h5>
-        <p class="card-text">You can find here all the informatins about students in the system</p>
+        <h5 class="card-title"><strong>STUDENTS LIST</strong></h5>
+        <p class="card-text">Details of all the registered students will be visible here</p>
 
         <table class="table">
             <thead class="thead-light">

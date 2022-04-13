@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <title>Student management system</title>
+    <title>Data management system</title>
 </head>
 <body>
 @include("navbar")
@@ -18,7 +18,7 @@
 
 <div class="row header-container justify-content-center">
     <div class="header">
-        <h1>Student Management System</h1>
+        <h1>Data Management System</h1>
     </div>
 </div>
 
@@ -43,7 +43,7 @@
                 <div class="card mb-3">
                     <img src="https://www.vhv.rs/dpng/d/82-829950_college-student-cartoon-png-transparent-png.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Enter the informations of the new student</h5>
+                        <h5 class="card-title">Enter the data of the new student</h5>
                         <form action="{{ url('/store') }}" method="post">
                             @csrf
                             <div class="form-group">
@@ -99,11 +99,11 @@
                 <div class="card mb-3">
                     <img src="https://www.vhv.rs/dpng/d/82-829950_college-student-cartoon-png-transparent-png.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Update informations of student</h5>
+                        <h5 class="card-title">Update Student Data</h5>
                         <form action="{{ url('/update/'.$student->id) }}" method="post">
                             @csrf
                             <div class="form-group">
-                                <label>CNE</label>
+                                <label>NE</label>
                                 <input value="{{ $student->cne }}" name="cne" type="text" class="form-control"  placeholder="Enter cne">
                             </div>
                             <div class="form-group">
