@@ -1,6 +1,6 @@
 
 <div class="card mb-3">
-    <img src="https://cdn.pixabay.com/photo/2015/05/19/14/55/educational-773651_960_720.jpg" class="card-img-top" alt="...">
+    <img src="https://www.creatrixcampus.com/sites/default/files/styles/image_1200x700/public/2019-05/benefits-of-student-information-system.jpg?itok=5_KSMYS5" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title">List of students</h5>
         <p class="card-text">You can find here all the informatins about students in the system</p>
@@ -8,7 +8,7 @@
         <table class="table">
             <thead class="thead-light">
             <tr>
-                <th scope="col">CNE</th>
+                <th scope="col">NE</th>
                 <th scope="col">First name</th>
                 <th scope="col">Second Name</th>
                 <th scope="col">Age</th>

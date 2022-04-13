@@ -48,7 +48,7 @@ class StudentController extends Controller
         $student->age = $request->input('age') ;
         $student->speciality = $request->input('speciality') ;
         $student->save() ;
-        return redirect('/') ;
+        return back();
     }
 
     /**
@@ -95,7 +95,7 @@ class StudentController extends Controller
       $student->age = $request->input('age') ;
       $student->speciality = $request->input('speciality') ;
       $student->save() ;
-      return redirect('/') ;
+      return back();
     }
 
     /**

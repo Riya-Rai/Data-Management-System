@@ -47,8 +47,8 @@
                         <form action="{{ url('/store') }}" method="post">
                             @csrf
                             <div class="form-group">
-                                <label>CNE</label>
-                                <input name="cne" type="text" class="form-control"  placeholder="Enter cne">
+                                <label>NE</label>
+                                <input name="cne" type="text" class="form-control"  placeholder="Enter New Entry">
                             </div>
                             <div class="form-group">
                                 <label>First Name</label>

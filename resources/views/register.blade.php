@@ -67,7 +67,7 @@
             <div class="input-group">
                 <button name="submit" class="btn">Register</button>
             </div>
-            <p class="login-register-text">Have an account? <a href="/login">Login Here</a>.</p>
+            <p class="login-register-text">Have an account? <a href="/">Login Here</a>.</p>
         </form>
     </div>
 </body>
